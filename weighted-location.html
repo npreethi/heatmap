@@ -27,12 +27,12 @@
 // Adding 500 Data Points
 var map, pointarray, heatmap;
 
-var tamiFluData = [
-{location: new google.maps.LatLng(40.922326,-72.637078), weight: 0.5},
-{location: new google.maps.LatLng(40.922326,-72.637078), weight: 2},
-{location: new google.maps.LatLng(18.165273,-66.722583), weight: 3},
-{location: new google.maps.LatLng(18.393103,-67.180953), weight: 0.5},
-{location: new google.maps.LatLng(18.455913,-67.14578), weight: 2},
+var myWeightedData = [
+{location: new google.maps.LatLng(40.922326,-72.637078), weight: 5},
+{location: new google.maps.LatLng(40.922326,-72.637078), weight: 5},
+{location: new google.maps.LatLng(18.165273,-66.722583), weight: 5},
+{location: new google.maps.LatLng(18.393103,-67.180953), weight: 5},
+{location: new google.maps.LatLng(18.455913,-67.14578), weight: 5},
 new google.maps.LatLng(18.49352,-67.135883)
 ];
 
@@ -49,7 +49,7 @@ function initialize() {
   //var pointArray = new google.maps.MVCArray(tamiFluData);
 
   heatmap = new google.maps.visualization.HeatmapLayer({
-    data: tamiFluData
+    data: myWeightedData
   });
 
   heatmap.setMap(map);
