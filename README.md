@@ -1,2 +1,1 @@
-TamiFlu-Heatmaps
-================
+Google heatmap exploration
